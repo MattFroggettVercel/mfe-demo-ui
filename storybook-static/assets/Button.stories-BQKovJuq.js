@@ -1,0 +1,13 @@
+import{R as g}from"./index-RYns6xqu.js";function d(e){var t,a,r="";if(typeof e=="string"||typeof e=="number")r+=e;else if(typeof e=="object")if(Array.isArray(e)){var n=e.length;for(t=0;t<n;t++)e[t]&&(a=d(e[t]))&&(r&&(r+=" "),r+=a)}else for(a in e)e[a]&&(r&&(r+=" "),r+=a);return r}function f(){for(var e,t,a=0,r="",n=arguments.length;a<n;a++)(e=arguments[a])&&(t=d(e))&&(r&&(r+=" "),r+=t);return r}const y=({type:e="primary",textColor:t,size:a="medium",onClick:r,label:n})=>g.createElement("button",{type:"button",className:f("storybook-button",`storybook-button--${a}`,`storybook-button--${e}`),style:t?{color:t}:{},onClick:r},n);y.__docgenInfo={description:"Primary UI component for user interaction",methods:[],displayName:"Button",props:{type:{required:!1,tsType:{name:"union",raw:'"primary" | "secondary"',elements:[{name:"literal",value:'"primary"'},{name:"literal",value:'"secondary"'}]},description:"Is this the principal call to action on the page?",defaultValue:{value:'"primary"',computed:!1}},textColor:{required:!1,tsType:{name:"string"},description:"What background color to use"},size:{required:!1,tsType:{name:"union",raw:'"small" | "medium" | "large"',elements:[{name:"literal",value:'"small"'},{name:"literal",value:'"medium"'},{name:"literal",value:'"large"'}]},description:"How large should the button be?",defaultValue:{value:'"medium"',computed:!1}},label:{required:!0,tsType:{name:"string"},description:"Button contents"},onClick:{required:!1,tsType:{name:"signature",type:"function",raw:"(event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void",signature:{arguments:[{type:{name:"ReactMouseEvent",raw:"React.MouseEvent<HTMLButtonElement, MouseEvent>",elements:[{name:"HTMLButtonElement"},{name:"MouseEvent"}]},name:"event"}],return:{name:"void"}}},description:"Optional click handler"}}};const b={title:"Components/Button",component:y},o={args:{label:"Primary 😃",size:"large",type:"primary"}},s={args:{...o.args,type:"secondary",label:"Secondary 😇"}};var l,i,m;o.parameters={...o.parameters,docs:{...(l=o.parameters)==null?void 0:l.docs,source:{originalSource:`{
+  args: {
+    label: "Primary 😃",
+    size: "large",
+    type: "primary"
+  }
+}`,...(m=(i=o.parameters)==null?void 0:i.docs)==null?void 0:m.source}}};var u,c,p;s.parameters={...s.parameters,docs:{...(u=s.parameters)==null?void 0:u.docs,source:{originalSource:`{
+  args: {
+    ...Primary.args,
+    type: "secondary",
+    label: "Secondary 😇"
+  }
+}`,...(p=(c=s.parameters)==null?void 0:c.docs)==null?void 0:p.source}}};const E=["Primary","Secondary"];export{o as Primary,s as Secondary,E as __namedExportsOrder,b as default};
